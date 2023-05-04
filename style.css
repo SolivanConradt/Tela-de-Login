@@ -1,0 +1,79 @@
+
+{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   width: 100%;
+   height: 100vh;
+   font-family: Arial, sans-serif;
+   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Panoramic_santiago_bernabeu.jpg/1200px-Panoramic_santiago_bernabeu.jpg');
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden; /* remove as bordas */
+}
+
+form {
+  width: 300px;
+  padding: 20px;
+  background-color: rgba(87, 100, 177, 0.8);
+  border-radius: 5px;
+  box-shadow:  0 0 10px rgba(161, 49, 154, 0.2);
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin: 15px auto;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background:   #3489ca;
+  color: #070606;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(156, 71, 236);
+}
+
+
+ /* Responsividade  */
+@media screen and (max-widht: 600px){
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  input {
+    height: 25px;
+  }
+}
